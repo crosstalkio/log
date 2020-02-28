@@ -1,0 +1,3 @@
+# Log
+
+Minimal Logging framework.
