@@ -1,4 +1,4 @@
-module bitbucket.org/crosstalkio/log
+module github.com/crosstalkio/log
 
 go 1.10
 
