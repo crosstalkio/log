@@ -5,6 +5,7 @@ tidy:
 	go mod tidy
 
 clean:
+	rm -f go.sum
 
 test:
 	go test -v -race  .
