@@ -4,6 +4,8 @@ all:
 	go mod tidy
 	go build .
 
+clean:
+
 test:
 	go test -v -race  .
 
@@ -13,4 +15,4 @@ $(GLANGCI_LINT):
 lint: $(GLANGCI_LINT)
 	$(GLANGCI_LINT) run
 
-.PHONY: all lint test
+.PHONY: all clean lint test
