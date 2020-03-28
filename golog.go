@@ -30,6 +30,6 @@ func GoLogger(level Level, out io.Writer, prefix string, flag int) Writer {
 		default:
 			msg = fmt.Sprintf("[%s] %v", lv.Tag(), v)
 		}
-		logger.Output(calldepth, msg)
+		_ = logger.Output(calldepth, msg)
 	}
 }

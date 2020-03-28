@@ -1,7 +1,5 @@
 package log
 
-type Processor func(v interface{}) interface{}
-
 type Logger interface {
 	Write(lv Level, payload interface{})
 	Debug(payload interface{})
@@ -12,8 +10,7 @@ type Logger interface {
 }
 
 type logger struct {
-	processor Processor
-	writer    Writer
+	writer Writer
 }
 
 func NewLogger(writer Writer) Logger {
