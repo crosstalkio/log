@@ -1,12 +1,14 @@
-all:
-	go mod tidy
+all: tidy
 	go build .
+
+tidy:
+	go mod tidy
 
 clean:
 
 test:
 	go test -v -race  .
 
-.PHONY: all clean test
+.PHONY: all tidy clean test
 
 include .make/lint.mk
