@@ -5,9 +5,9 @@ all:
 	go build .
 
 $(GLANGCI_LINT):
-	curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(GOPATH)/bin v1.23.1
+	curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(GOPATH)/bin v1.24.0
 
-lint:
+lint: $(GLANGCI_LINT)
 	$(GLANGCI_LINT) run
 
 .PHONY: all lint
