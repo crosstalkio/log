@@ -9,4 +9,4 @@ test:
 
 .PHONY: all clean test
 
-include make/lint.mk
+include .make/lint.mk
