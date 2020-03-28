@@ -1,4 +1,4 @@
-all: tidy
+all:
 	go build .
 
 tidy:
